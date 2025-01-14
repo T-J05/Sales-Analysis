@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Analysis Dashboard</title>
+  <link rel="stylesheet" href="../TJ/styless.css">
+</head>
+<body>
+  <header>
+    <h1>Sales Analysis Dashboard</h1>
+  </header>
+  <main>
+    <!-- Resumen de Productos -->
+    <section id="product-summary">
+      <h2>Resumen de Productos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Marca</th>
+            <th>Mantenimientos</th>
+            <th>Ventas</th>
+            <th>Total Ventas</th>
+            <th>Sugerencias</th>
+          </tr>
+        </thead>
+        <tbody id="product-table">
+          <!-- Las filas dinámicas se añadirán aquí -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Productos más vendidos -->
+    <section id="most-sold-products">
+      <h2>Top 10 Productos Más Vendidos</h2>
+      <ul id="top-products-list">
+        <!-- La lista dinámica de productos más vendidos se generará aquí -->
+      </ul>
+    </section>
+
+    <!-- Gráfico de Ventas -->
+    <section id="charts">
+      <h2>Gráfico de Ventas Mensuales</h2>
+      <canvas id="salesChart" width="800" height="400"></canvas>
+    </section>
+
+    <!-- Filtro por Año -->
+    <section id="year-filter">
+      <label for="year-select">Filtrar por año:</label>
+      <select id="year-select">
+        <!-- Opciones dinámicas de años se añadirán aquí -->
+      </select>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="ak.js"></script>
+</body>
+</html>
